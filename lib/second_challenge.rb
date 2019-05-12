@@ -8,8 +8,10 @@ def second_challenge
 
   value_array = []
 
-  groceries.each do |grocery_type, item|
-    value_array << item
+  groceries.each do |grocery_type, items|
+    items.each do |i|
+      value_array << i
+    end
   end
   
   value_array
