@@ -19,6 +19,7 @@ contacts.each do |person, data|
     data.each do |attribute, value|
       if attribute == :favorite_icecream_flavors
         value.reject { |flavor| flavor == "strawberry" }
+        value
       end
     end
   end
